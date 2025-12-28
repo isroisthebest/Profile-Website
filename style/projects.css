@@ -92,6 +92,7 @@ body{
     padding: 10px;
     border-radius: 10px;
     cursor: pointer;
+    position: relative;
 }
 
 .project-title{
@@ -105,6 +106,8 @@ body{
 
 .lang{
     padding-top: 20px;
+    position: absolute;
+    bottom: 0;
 }
 
 .lang img{
