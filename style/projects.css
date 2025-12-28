@@ -87,11 +87,24 @@ body{
 
 /*#121213*/
 
+.main-div{
+    position: absolute;
+    top: 15%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 20px;
+    gap: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
 .project{
-    background-color: #121213;
-    padding: 10px;
-    border-radius: 10px;
+    padding: 20px;
     cursor: pointer;
+    background-color: #121213;
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
 }
 
 .project-title{
@@ -101,6 +114,7 @@ body{
 .project-desc{
     padding-top: 15px;
     font-size: 1vw;
+    line-height: 130%;
 }
 
 .lang{
@@ -116,26 +130,6 @@ body{
 .lang img:hover{
     cursor: pointer;
     transform: translate(0, -10px);
-}
-
-#main-table{
-    position: absolute;
-    top: 15%;
-    padding: 50px;
-}
-
-#main-table tr td{
-    width: 30vw;
-    vertical-align: top;
-    height: 100%;
-}
-
-#inner-table{
-    height: inherit;
-}
-
-@media only screen and (max-width: 1091px) {
-    
 }
 
 @media only screen and (max-width: 920px) {
